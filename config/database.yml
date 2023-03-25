@@ -82,5 +82,4 @@ test:
 production:
   <<: *default
   database: GoldenGoose_production
-  username: GoldenGoose
-  password: <%= ENV["GOLDENGOOSE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
