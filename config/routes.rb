@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resource :eggs, only: :show
+  root to: "eggs#show"
 end
